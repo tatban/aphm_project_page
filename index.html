@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Spectron</title>
+        <title>APHM</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -19,7 +19,7 @@
                 <div><img src="Spectron_GAN.png" id="flowchart_image" style="position:relative;margin: 1em auto;width: 75%;height: auto;padding: 0.5em"></div>
                 <h3><b>Abstract</b></b></h3>
                 <div id="abstract" style="width:80%;font-family:Verdana;text-align:justify;padding:1em;position:relative;background:white;margin: 0 auto;">
-                    Modeling human head is a long standing problem in computer graphics and has got many practical applications in computer games, animation and film industry. Parametric head models try to approach this problem by providing low dimensional and ideally disentangled control parameters to change the identity and expression of a human face without requiring to explicitly model each face and expression combination. While a simple PCA based parametric model can be easily obtained directly from the 3D face scans, such model is restricted to fixed template mesh topology and thus limited in capacity to represent high frequency details of any real face due to inherent linearity of the model. Recent progress in neural networks and neural implicit surface representation has enabled the computers to learn more complex parametric head models with better generalization capability. However, they still struggle to fit sparse and possibly noisy point-clouds or depth maps of real faces due to under constrained latent space. \\ \\
+                    Modeling human head is a long standing problem in computer graphics and has got many practical applications in computer games, animation and film industry. Parametric head models try to approach this problem by providing low dimensional and ideally disentangled control parameters to change the identity and expression of a human face without requiring to explicitly model each face and expression combination. While a simple PCA based parametric model can be easily obtained directly from the 3D face scans, such model is restricted to fixed template mesh topology and thus limited in capacity to represent high frequency details of any real face due to inherent linearity of the model. Recent progress in neural networks and neural implicit surface representation has enabled the computers to learn more complex parametric head models with better generalization capability. However, they still struggle to fit sparse and possibly noisy point-clouds or depth maps of real faces due to under constrained latent space. <br><br>
 In this thesis, we propose to learn a neural parametric head model which utilizes 2D adversarial objective on multi-view differentiable renderings of 2D normal maps along side existing 3D point-cloud based objectives to properly constrain the latent spaces, thus enabling it to fit noisy point-clouds of real face scans. Additionally, we use tri-plane based hybrid neural surface representation to leverage its 3D aware rich features for representing high-frequency details and faster convergence. We empirically show that the proposed model not only out performs most of the existing models in reconstruction and fitting, but also is more robust to scanning noise. To our knowledge, we are the first to use tri-plane based hybrid surface representation in the context of neural parametric head models.
                 </div>
                 <br>
